@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>Author</key>
-	<string>Karl Lattimer</string>
+	<string>Karl Lattimer, Max Grass</string>
 	<key>Builder Version</key>
 	<string>12604.1.8.1.2</string>
 	<key>CFBundleDisplayName</key>
-	<string>KodiPlay</string>
+    <string>KodiPlay</string>
 	<key>CFBundleIdentifier</key>
 	<string>uk.org.qdh.kodiplay</string>
 	<key>CFBundleInfoDictionaryVersion</key>

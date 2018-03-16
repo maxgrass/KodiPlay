@@ -140,10 +140,12 @@ function addItemsToPlaylist(items, callback) {
 function getPluginPath(url, callback) {
     for (var i = 0; i < allModules.length; i++) {
         var module = allModules[i];
+        // 'sendToKodi' plugin can play almost anything so it will return true if any other plugin cannot play it.
         if (module.canHandleUrl(url)) {
             module.getPluginPath(url, function(path) {
                                  callback(module.getMediaType(), path);
                                  });
+                                 break;
         }
     }
 }

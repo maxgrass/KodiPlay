@@ -464,6 +464,18 @@ var SopcastModule = {
     }
 };
 
+var SendToKodiModule = {
+canHandleUrl: function(url) {
+    return true;
+},
+getMediaType: function() {
+    return 'video';
+},
+getPluginPath: function(url, callback) {
+    callback('plugin://plugin.video.sendtokodi/?' + url);
+}
+};
+
 var allModules = [
     DirectVideoLinkModule,
     DirectAudioLinkModule,
@@ -486,5 +498,6 @@ var allModules = [
     KatsomoModule,
     AcestreamModule,
     SopcastModule,
-    AnimeLabModule
+    AnimeLabModule,
+    SendToKodiModule
 ];
